@@ -12,8 +12,8 @@ import com.example.demo.entities.Ubung;
 import com.example.demo.property.FileStorageProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties({FileStorageProperties.class})
-@EnableKafka
+@EnableConfigurationProperties({FileStorageProperties.class}) // nest pas necessaire
+@EnableKafka // ce nest pas necessaire
 public class Ubung3MicroserviceApplication implements CommandLineRunner {
 
 	@Autowired
